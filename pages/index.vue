@@ -1,3 +1,12 @@
+<script setup lang="ts">
+const { data: posts } = await useAsyncData('latest-posts', () =>
+    queryContent('/blog')
+        .sort({ date: 1 })
+        .limit(3)
+        .find()
+)
+</script>
+
 <template>
     <section>
         <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Dan Vega!</h1>
@@ -30,14 +39,10 @@
 
     <section>
         <h2 class="text-3xl font-bold mt-8">Latest Blog Posts</h2>
-        <!-- <div class="grid md:grid-cols-3 pt-8 gap-10">
+        <div class="grid md:grid-cols-3 pt-8 gap-10">
             <Post :posts="posts" />
-        </div> -->
+        </div>
     </section>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style scoped></style>
