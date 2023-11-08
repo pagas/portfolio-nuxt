@@ -25,8 +25,8 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
                 I have been writing software for over 10+ years.
             </p>
             <p class="text-lg py-2">
-                In my personal life I am a husband to my loving wife and a father of two little girl and boy. I enjoy
-                new tech running and lifting weights to get me through the week.
+                In my personal life I am a husband to my loving wife and a father of two, a girl and little  boy. I enjoy
+                new tech, running and lifting weights to get me through the week.
             </p>
         </div>
         <img src="~/assets/images/web-development.png" class="w-1/2 md:max-w-sm p-8 mx-auto" />
