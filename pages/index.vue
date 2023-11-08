@@ -9,32 +9,27 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
 
 <template>
     <section>
-        <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Dan Vega!</h1>
-        <p class="text-base text-gray-900 p-2 italic">Spring Developer Advocate at VMware</p>
+        <h1 class="text-5xl font-bold mt-20">&#9889; Hello, I'm Paulius!</h1>
+<!--          👋🏻  -->
+        <p class="text-base text-gray-900 p-2 italic">Passionate and Driven Web developer</p>
     </section>
     <section class="flex flex-col md:flex-row">
         <div class="md:w-3/4">
             <h2 class="text-3xl font-bold mt-8">My Story</h2>
             <p class="text-lg py-2">
-                I am a Software Engineer living just outside of one of my favorite places in the world, Cleveland, Ohio. I
-                am a
-                self-taught programmer who firmly believes that you can accomplish anything in this life if you put your
-                mind to
-                it,
-                roll up your sleeves and are willing to put in the work.
+              I am an experienced developer skilled in writing clean well-structured code using numerous frontend and
+              backend technologies. My main passion is front-end as I enjoy working with designers to produce attractive
+              interfaces that delight users.
             </p>
             <p class="text-lg py-2">
-                I have been writing software for over 20+ years now and I use my knowledge, passion, and influence to help
-                other
-                developers achieve their goals. I teach online and currently, have over 160,000 students.
+                I have been writing software for over 10+ years.
             </p>
             <p class="text-lg py-2">
-                In my personal life I am a husband to my best friend in the world and a father of two little girls. I enjoy
-                reading,
-                running and lifting weights to get me through the week.
+                In my personal life I am a husband to my loving wife and a father of two little girl and boy. I enjoy
+                new tech running and lifting weights to get me through the week.
             </p>
         </div>
-        <img src="~/assets/images/danvega-avatar.png" class="w-1/2 md:max-w-sm p-8 mx-auto" />
+        <img src="~/assets/images/web-development.png" class="w-1/2 md:max-w-sm p-8 mx-auto" />
     </section>
 
     <section>
