@@ -21,7 +21,11 @@ tags:
 - PNG probably has broader tooling support for transparency, but you can find tools to create alpha-channel ICOs as well
 - icon size should be 32x32
 
-## Update favicon in nuxt config
+## Nuxt by default request favicon icon from
+
+```./public/favicon.ico```
+
+## Or you can update it in nuxt config
 
 ```ts
 export default defineNuxtConfig({
