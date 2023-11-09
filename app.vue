@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen">
     <!-- <NuxtWelcome /> -->
     <TheHeader />
-    <main class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 grow items-start w-full">
+    <main class="mx-auto max-w-7xl px-2 pb-8 sm:px-6 lg:px-8 grow items-start w-full">
       <NuxtPage />
     </main>
     <TheFooter/>
