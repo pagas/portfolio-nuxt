@@ -2,7 +2,7 @@
 title: Nuxt favicon
 description: Nuxt favicon
 date: 2023-11-09
-cover: nasa-Q1p7bh3SHj8-unsplash.jpg
+cover: nuxt.png
 tags:
   - nuxt
   - favicon
