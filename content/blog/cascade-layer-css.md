@@ -38,7 +38,7 @@ CSS Layers have their own specificity and selectors specificity outside of those
 ## Nesting layers
 ```css
 @layer utilities {
-    @anotherLayer {
+    @layer anotherLayer {
         .btn {
             padding: 2rem;
         }
