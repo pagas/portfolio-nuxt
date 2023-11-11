@@ -5,10 +5,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxt/content',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    '@sidebase/nuxt-auth'
   ],
   runtimeConfig: {
-    githubToken: process.env.GITHUB_TOKEN
+    githubToken: process.env.GITHUB_TOKEN,
+    gitHubClientId: process.env.GITHUB_CLIENT_ID,
+    gitHubClientSecret: process.env.GITHUB_CLIENT_SECRET
   },
   content: {
     highlight: {
