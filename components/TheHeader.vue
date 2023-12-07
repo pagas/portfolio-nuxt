@@ -43,9 +43,9 @@ const singInHandler = async () => {
                 :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
             </div>
           </div>
-          <div>
+          <!-- <div>
             <UIButton @click="singInHandler">LogIn</UIButton>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
