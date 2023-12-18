@@ -6,7 +6,8 @@ const props = defineProps(['posts'])
   <div v-for="post in props.posts" :key="post.slug"
     class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:opacity-75">
     <NuxtLink :to="post._path">
-      <img :src="`/images/blog/${post.cover}`" alt="Blog Post Cover Image" class="w-full h-48 object-cover">
+      <!-- <img :src="`/images/blog/${post.cover}`" alt="Blog Post Cover Image" class="w-full h-48 object-cover"> -->
+      <img :src="post.image" alt="Blog Post Cover Image" class="w-full h-48 object-cover">
     </NuxtLink>
     <div class="px-6 pt-6 flex-auto">
       <h2 class="text-xl font-bold mb-2">{{ post.title }}</h2>

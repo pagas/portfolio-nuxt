@@ -1,7 +1,11 @@
 <script lang="ts" setup>
-const { data: posts } = await useAsyncData('posts', () =>
-  queryContent('/blog').find()
-)
+// const { data: posts } = await useAsyncData('posts', () =>
+//   queryContent('/blog').find()
+// )
+
+import { getPosts } from "./../../api/post";
+const posts = await getPosts({});
+
 </script>
 
 <template>
