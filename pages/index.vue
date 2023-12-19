@@ -7,13 +7,19 @@ const posts = await getPosts({limit: 3});
 const recentProjects = [
     {
         title: 'Responsive Portfolio',
-        description: 'Responsive Portfolio website. Tech used: Next, CSS Modules, FontAwesome, Google Fonts, Semantic HTML',
+        description: 'Responsive Portfolio design. Tech used: Next, CSS Modules, FontAwesome, Google Fonts, Semantic HTML',
         image: '/images/recent-projects/portfolio-site.png',
         _path: 'https://responsive-portfolio-next.netlify.app/'
     },
     {
+        title: 'Responsive Architectural',
+        description: 'Responsive Architectural design. Tech used: Next, CSS Modules, FontAwesome, Google Fonts, Semantic HTML',
+        image: '/images/recent-projects/architectural-site.png',
+        _path: 'https://responsive-architectural.netlify.app/'
+    },
+    {
         title: 'Responsive Furniture',
-        description: 'Responsive Furniture website. Tech used: CSS, Semantic HTML, FontAwesome, Google Fonts',
+        description: 'Responsive Furniture design. Tech used: CSS, Semantic HTML, FontAwesome, Google Fonts',
         image: '/images/recent-projects/furniture-site.png',
         _path: 'https://responsive-furniture.netlify.app/'
     },
