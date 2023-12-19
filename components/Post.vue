@@ -10,9 +10,13 @@ const isFullUrl = (path: string) => {
 <template>
   <div v-for="post in props.posts" :key="post.slug"
     class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:opacity-75">
-    <NuxtLink :to="post._path">
+    <NuxtLink :to="post._path" v-if="!isFullUrl(post._path)">
       <img :src="post.image" alt={{ post.title }} class="w-full h-48 object-cover">
     </NuxtLink>
+    <a v-else :href="post._path" target="_blank">
+      <img :src="post.image" alt={{ post.title }} class="w-full h-48 object-cover">
+    </a>
+
     <div class="px-6 pt-6 flex-auto">
       <h2 class="text-xl font-bold mb-2">{{ post.title }}</h2>
       <p class="text-gray-700 mb-4">{{ post.description }}</p>
